@@ -26,9 +26,11 @@ def main():
         if key_lst[pg.K_DOWN]:#練習８：下矢印のとき
             kk_rct.move_ip((0,+1))#練習８：縦座標を+1
         if key_lst[pg.K_RIGHT]:#練習８：右矢印のとき
-            kk_rct.move_ip((+1,0))#練習８：横座標を+1
+            kk_rct.move_ip((+2,0))#練習８：横座標を+1
         if key_lst[pg.K_LEFT]:#練習８：左矢印のとき
             kk_rct.move_ip((-1,0))#練習８：横座標を-1
+        else:
+            kk_rct.move_ip((-1,0))
         x = -(tmr%3200)#練習6#練習7
         screen.blit(bg_img, [x, 0])#練習3#練習6
         screen.blit(bg_img1, [x+1600, 0])#練習7
